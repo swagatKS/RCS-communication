@@ -101,6 +101,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "CREATE";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -112,6 +113,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "CREATE";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -123,13 +125,14 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "CREATE";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // FormMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.SystemColors.Info;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(820, 458);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
