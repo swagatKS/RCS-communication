@@ -90,5 +90,8 @@
   <ItemGroup>
     <None Include="Resources\bastian-solutions-logo-6511E43B29-seeklogo.com.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bastian-solutions-logo-6511E43B29-seeklogo.com1.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

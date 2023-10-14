@@ -121,4 +121,7 @@
   <data name="bastian-solutions-logo-6511E43B29-seeklogo.com" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bastian-solutions-logo-6511E43B29-seeklogo.com.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bastian-solutions-logo-6511E43B29-seeklogo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bastian-solutions-logo-6511E43B29-seeklogo.com1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
