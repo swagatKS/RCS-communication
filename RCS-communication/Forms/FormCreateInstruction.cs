@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RCS_communication
+namespace RCS_communication.Forms
 {
-    public partial class Form1 : Form
+    public partial class FormCreateInstruction : Form
     {
-        public Form1()
+        public FormCreateInstruction()
         {
             InitializeComponent();
         }
