@@ -55,7 +55,7 @@
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 581);
+            this.panelMenu.Size = new System.Drawing.Size(196, 465);
             this.panelMenu.TabIndex = 0;
             // 
             // button4
@@ -66,13 +66,13 @@
             this.button4.ForeColor = System.Drawing.Color.Gainsboro;
             this.button4.Image = global::RCS_communication.Properties.Resources.imageedit_2_6023662441_30x30;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 420);
+            this.button4.Location = new System.Drawing.Point(0, 336);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(220, 80);
+            this.button4.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.button4.Size = new System.Drawing.Size(196, 64);
             this.button4.TabIndex = 5;
-            this.button4.Text = "  CREATE";
+            this.button4.Text = "  BLANK2";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button4.UseVisualStyleBackColor = true;
@@ -85,11 +85,11 @@
             this.buttonModify.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonModify.Image = global::RCS_communication.Properties.Resources.final_modify_30_30;
             this.buttonModify.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonModify.Location = new System.Drawing.Point(0, 340);
+            this.buttonModify.Location = new System.Drawing.Point(0, 272);
             this.buttonModify.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonModify.Name = "buttonModify";
-            this.buttonModify.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
-            this.buttonModify.Size = new System.Drawing.Size(220, 80);
+            this.buttonModify.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.buttonModify.Size = new System.Drawing.Size(196, 64);
             this.buttonModify.TabIndex = 4;
             this.buttonModify.Text = "  MODIFY";
             this.buttonModify.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -105,11 +105,11 @@
             this.buttonQuery.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonQuery.Image = global::RCS_communication.Properties.Resources.query_final_30_30;
             this.buttonQuery.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonQuery.Location = new System.Drawing.Point(0, 260);
+            this.buttonQuery.Location = new System.Drawing.Point(0, 208);
             this.buttonQuery.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonQuery.Name = "buttonQuery";
-            this.buttonQuery.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
-            this.buttonQuery.Size = new System.Drawing.Size(220, 80);
+            this.buttonQuery.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.buttonQuery.Size = new System.Drawing.Size(196, 64);
             this.buttonQuery.TabIndex = 3;
             this.buttonQuery.Text = "  QUERY";
             this.buttonQuery.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -125,11 +125,11 @@
             this.buttonCreate.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonCreate.Image = global::RCS_communication.Properties.Resources.imageedit_2_6023662441_30x30;
             this.buttonCreate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCreate.Location = new System.Drawing.Point(0, 180);
+            this.buttonCreate.Location = new System.Drawing.Point(0, 144);
             this.buttonCreate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonCreate.Name = "buttonCreate";
-            this.buttonCreate.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
-            this.buttonCreate.Size = new System.Drawing.Size(220, 80);
+            this.buttonCreate.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.buttonCreate.Size = new System.Drawing.Size(196, 64);
             this.buttonCreate.TabIndex = 2;
             this.buttonCreate.Text = "  CREATE";
             this.buttonCreate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -145,13 +145,13 @@
             this.buttonInfo.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonInfo.Image = global::RCS_communication.Properties.Resources.imageedit_2_6023662441_30x30;
             this.buttonInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonInfo.Location = new System.Drawing.Point(0, 100);
+            this.buttonInfo.Location = new System.Drawing.Point(0, 80);
             this.buttonInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonInfo.Name = "buttonInfo";
-            this.buttonInfo.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
-            this.buttonInfo.Size = new System.Drawing.Size(220, 80);
+            this.buttonInfo.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.buttonInfo.Size = new System.Drawing.Size(196, 64);
             this.buttonInfo.TabIndex = 1;
-            this.buttonInfo.Text = "  CREATE";
+            this.buttonInfo.Text = "  BLANK1";
             this.buttonInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonInfo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonInfo.UseVisualStyleBackColor = true;
@@ -163,7 +163,7 @@
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(220, 100);
+            this.panelLogo.Size = new System.Drawing.Size(196, 80);
             this.panelLogo.TabIndex = 1;
             // 
             // panelTitle
@@ -171,9 +171,10 @@
             this.panelTitle.BackColor = System.Drawing.Color.SteelBlue;
             this.panelTitle.Controls.Add(this.label1);
             this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitle.Location = new System.Drawing.Point(220, 0);
+            this.panelTitle.Location = new System.Drawing.Point(196, 0);
+            this.panelTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(907, 100);
+            this.panelTitle.Size = new System.Drawing.Size(806, 80);
             this.panelTitle.TabIndex = 1;
             // 
             // label1
@@ -182,31 +183,31 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(369, 34);
+            this.label1.Location = new System.Drawing.Point(328, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 36);
+            this.label1.Size = new System.Drawing.Size(100, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "HOME";
             // 
             // panelDesktop
             // 
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(220, 100);
+            this.panelDesktop.Location = new System.Drawing.Point(196, 80);
+            this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(907, 481);
+            this.panelDesktop.Size = new System.Drawing.Size(806, 385);
             this.panelDesktop.TabIndex = 2;
             // 
             // FormMainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(1127, 581);
+            this.ClientSize = new System.Drawing.Size(1002, 465);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelMenu);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormMainMenu";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FormMainMenu_Load);
