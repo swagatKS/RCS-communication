@@ -93,6 +93,16 @@ namespace RCS_communication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap final_modify_30_30 {
+            get {
+                object obj = ResourceManager.GetObject("final modify 30,30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap final_robot_logo_design_vector_removebg_preview_50x50 {
             get {
                 object obj = ResourceManager.GetObject("final-robot-logo-design-vector-removebg-preview_50x50", resourceCulture);
@@ -136,6 +146,26 @@ namespace RCS_communication.Properties {
         internal static System.Drawing.Bitmap imageedit_2_6023662441 {
             get {
                 object obj = ResourceManager.GetObject("imageedit_2_6023662441", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imageedit_2_6023662441_30x30 {
+            get {
+                object obj = ResourceManager.GetObject("imageedit_2_6023662441_30x30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap query_final_30_30 {
+            get {
+                object obj = ResourceManager.GetObject("query final 30,30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
