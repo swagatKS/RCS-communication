@@ -34,7 +34,12 @@ namespace RCS_communication.Forms
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (rbtnInbound.Checked)
+            {
+         
+                groupBoxInbound.Visible = true;
+                groupBoxOutbound.Visible = false;
+            }
         }
 
         private void label5_Click(object sender, EventArgs e)
