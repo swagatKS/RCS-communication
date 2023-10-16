@@ -20,6 +20,7 @@ namespace RCS_communication
         public FormMainMenu()
         {
             InitializeComponent();
+            random = new Random();
         }
 
         private Color SelectThemeColor()
@@ -27,7 +28,7 @@ namespace RCS_communication
             int index = random.Next(ThemeColor.ColorList.Count);
             while (tempIndex == index)
             {
-                random.Next(ThemeColor.ColorList.Count);
+                index = random.Next(ThemeColor.ColorList.Count);
 
             }
             tempIndex = index;
@@ -36,18 +37,31 @@ namespace RCS_communication
         }
         private void ActivateButton(object btnSender)
         {
-            if (btnSender == null)
+            if (btnSender != null)
             {
-                
                 if (currentButton != (Button)btnSender)
                 {
+                    DisableButton();
                     Color color = SelectThemeColor();
                     currentButton = (Button)btnSender;
                     currentButton.BackColor = color;
                     currentButton.ForeColor = Color.White;
-                    
-                }
+                    currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                } 
                
+            }
+        }
+
+        private void DisableButton()
+        {
+            foreach (Control previousBtn in panelMenu.Controls)
+            {
+                if (previousBtn.GetType() == typeof(Button))
+                {
+                    previousBtn.BackColor = Color.FromArgb(51, 51, 76);
+                    previousBtn.ForeColor = Color.Gainsboro;
+                    previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                }
             }
         }
 
@@ -77,6 +91,26 @@ namespace RCS_communication
         }
 
         private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+        }
+
+        private void buttonQuery_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+        }
+
+        private void buttonModify_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

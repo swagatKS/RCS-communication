@@ -159,5 +159,15 @@ namespace RCS_communication.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2023_10_16_at_17_30_49_b58adaca {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2023-10-16 at 17.30.49_b58adaca", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
