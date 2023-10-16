@@ -102,5 +102,20 @@
   <ItemGroup>
     <None Include="Resources\Screenshot 2023-10-16 120702.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\final-robot-logo-design-vector-removebg-preview_50x501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_2_6023662441.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image__1_-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
