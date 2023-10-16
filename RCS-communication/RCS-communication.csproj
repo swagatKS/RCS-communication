@@ -93,5 +93,8 @@
   <ItemGroup>
     <None Include="Resources\bastian-solutions-logo-6511E43B29-seeklogo.com1.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif.com-gif-maker-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
