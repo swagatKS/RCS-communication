@@ -16,6 +16,7 @@ namespace RCS_communication
         private Button currentButton;
         private Random random;
         private int tempIndex;
+        private Form activeForm;
 
         public FormMainMenu()
         {
@@ -47,6 +48,8 @@ namespace RCS_communication
                     currentButton.BackColor = color;
                     currentButton.ForeColor = Color.White;
                     currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    panelTitle.BackColor = color;
+                    panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
                 } 
                
             }
@@ -63,6 +66,22 @@ namespace RCS_communication
                     previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 }
             }
+        }
+
+        private void OpenChildForm(Form childForm, object btnSender)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            ActivateButton(btnSender);
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            this.panelDesktop.Controls.Add(childForm);
+            this.panelDesktop.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+            label1.Text = childForm.Text;
         }
 
         private void FormMainMenu_Load(object sender, EventArgs e)
@@ -97,17 +116,17 @@ namespace RCS_communication
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            
         }
 
         private void buttonQuery_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            
         }
 
         private void buttonModify_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -117,7 +136,17 @@ namespace RCS_communication
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            ActivateButton(sender);
+        }
 
+        private void buttonCreate_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormCreateInstruction(), sender);
+        }
+
+        private void buttonModify_Click_1(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
         }
     }
 }
