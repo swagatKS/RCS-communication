@@ -89,5 +89,25 @@ namespace RCS_communication.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2023_10_16_115855 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2023-10-16 115855", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2023_10_16_120702 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2023-10-16 120702", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

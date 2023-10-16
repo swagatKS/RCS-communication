@@ -96,5 +96,11 @@
   <ItemGroup>
     <None Include="Resources\ezgif.com-gif-maker-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2023-10-16 115855.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2023-10-16 120702.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
