@@ -33,6 +33,8 @@
             this.panelTitle = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonCloseChildform = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.buttonModify = new System.Windows.Forms.Button();
             this.buttonQuery = new System.Windows.Forms.Button();
@@ -40,6 +42,8 @@
             this.buttonInfo = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelTitle.SuspendLayout();
+            this.panelDesktop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -55,7 +59,7 @@
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(196, 465);
+            this.panelMenu.Size = new System.Drawing.Size(220, 1050);
             this.panelMenu.TabIndex = 0;
             // 
             // panelLogo
@@ -65,18 +69,18 @@
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(196, 80);
+            this.panelLogo.Size = new System.Drawing.Size(220, 100);
             this.panelLogo.TabIndex = 1;
             // 
             // panelTitle
             // 
             this.panelTitle.BackColor = System.Drawing.Color.SteelBlue;
+            this.panelTitle.Controls.Add(this.buttonCloseChildform);
             this.panelTitle.Controls.Add(this.label1);
             this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitle.Location = new System.Drawing.Point(196, 0);
-            this.panelTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelTitle.Location = new System.Drawing.Point(220, 0);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(806, 80);
+            this.panelTitle.Size = new System.Drawing.Size(1008, 100);
             this.panelTitle.TabIndex = 1;
             // 
             // label1
@@ -85,20 +89,43 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(328, 27);
+            this.label1.Location = new System.Drawing.Point(428, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 31);
+            this.label1.Size = new System.Drawing.Size(116, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "HOME";
             // 
             // panelDesktop
             // 
+            this.panelDesktop.Controls.Add(this.pictureBox1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(196, 80);
-            this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelDesktop.Location = new System.Drawing.Point(220, 100);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(806, 385);
+            this.panelDesktop.Size = new System.Drawing.Size(1008, 950);
             this.panelDesktop.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::RCS_communication.Properties.Resources.bs_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(319, 345);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(351, 155);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // buttonCloseChildform
+            // 
+            this.buttonCloseChildform.FlatAppearance.BorderSize = 0;
+            this.buttonCloseChildform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCloseChildform.Image = global::RCS_communication.Properties.Resources.closeoutline_110831_removebg_preview_30x30;
+            this.buttonCloseChildform.Location = new System.Drawing.Point(39, 25);
+            this.buttonCloseChildform.Name = "buttonCloseChildform";
+            this.buttonCloseChildform.Size = new System.Drawing.Size(60, 46);
+            this.buttonCloseChildform.TabIndex = 0;
+            this.buttonCloseChildform.UseVisualStyleBackColor = true;
+            this.buttonCloseChildform.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // button4
             // 
@@ -204,16 +231,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(1002, 465);
+            this.ClientSize = new System.Drawing.Size(1228, 1050);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelMenu);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MinimumSize = new System.Drawing.Size(1250, 1006);
             this.Name = "FormMainMenu";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FormMainMenu_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
+            this.panelDesktop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -230,6 +261,8 @@
         private System.Windows.Forms.Panel panelTitle;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelDesktop;
+        private System.Windows.Forms.Button buttonCloseChildform;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

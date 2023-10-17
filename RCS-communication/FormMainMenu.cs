@@ -22,6 +22,7 @@ namespace RCS_communication
         {
             InitializeComponent();
             random = new Random();
+            buttonCloseChildform.Visible = false;
         }
 
         private Color SelectThemeColor()
@@ -50,6 +51,7 @@ namespace RCS_communication
                     currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     panelTitle.BackColor = color;
                     panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
+                    buttonCloseChildform.Visible = true;
                 } 
                
             }
@@ -147,6 +149,23 @@ namespace RCS_communication
         private void buttonModify_Click_1(object sender, EventArgs e)
         {
             ActivateButton(sender);
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            Reset();
+        }
+
+        private void Reset()
+        {
+            DisableButton();
+            label1.Text = "HOME";
+            panelTitle.BackColor = Color.SteelBlue;
+            panelLogo.BackColor = Color.FromArgb(39, 39, 58);
+            currentButton = null;
+            buttonCloseChildform.Visible = false;
         }
     }
 }
