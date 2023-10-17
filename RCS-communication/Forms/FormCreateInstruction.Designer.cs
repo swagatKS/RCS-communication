@@ -53,7 +53,7 @@
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(625, 351);
+            this.button1.Location = new System.Drawing.Point(628, 262);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(147, 49);
             this.button1.TabIndex = 2;
@@ -63,7 +63,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(175, 328);
+            this.textBox4.Location = new System.Drawing.Point(175, 300);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(422, 22);
             this.textBox4.TabIndex = 6;
@@ -72,7 +72,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(50, 280);
+            this.label3.Location = new System.Drawing.Point(50, 252);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 21);
             this.label3.TabIndex = 7;
@@ -83,7 +83,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(50, 329);
+            this.label4.Location = new System.Drawing.Point(50, 301);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 21);
             this.label4.TabIndex = 8;
@@ -115,7 +115,7 @@
             // 
             this.rbtnInbound.AutoSize = true;
             this.rbtnInbound.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnInbound.Location = new System.Drawing.Point(54, 47);
+            this.rbtnInbound.Location = new System.Drawing.Point(54, 25);
             this.rbtnInbound.Name = "rbtnInbound";
             this.rbtnInbound.Size = new System.Drawing.Size(100, 25);
             this.rbtnInbound.TabIndex = 13;
@@ -128,7 +128,7 @@
             // 
             this.rbtnOutbound.AutoSize = true;
             this.rbtnOutbound.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnOutbound.Location = new System.Drawing.Point(415, 47);
+            this.rbtnOutbound.Location = new System.Drawing.Point(415, 25);
             this.rbtnOutbound.Name = "rbtnOutbound";
             this.rbtnOutbound.Size = new System.Drawing.Size(110, 25);
             this.rbtnOutbound.TabIndex = 14;
@@ -157,7 +157,7 @@
             this.groupBoxInbound.Controls.Add(this.label5);
             this.groupBoxInbound.Controls.Add(this.label6);
             this.groupBoxInbound.Controls.Add(this.cmbInboundSource);
-            this.groupBoxInbound.Location = new System.Drawing.Point(54, 88);
+            this.groupBoxInbound.Location = new System.Drawing.Point(54, 66);
             this.groupBoxInbound.Name = "groupBoxInbound";
             this.groupBoxInbound.Size = new System.Drawing.Size(294, 169);
             this.groupBoxInbound.TabIndex = 18;
@@ -178,7 +178,7 @@
             this.groupBoxOutbound.Controls.Add(this.label1);
             this.groupBoxOutbound.Controls.Add(this.label2);
             this.groupBoxOutbound.Controls.Add(this.cmbOutboundDestination);
-            this.groupBoxOutbound.Location = new System.Drawing.Point(415, 88);
+            this.groupBoxOutbound.Location = new System.Drawing.Point(415, 66);
             this.groupBoxOutbound.Name = "groupBoxOutbound";
             this.groupBoxOutbound.Size = new System.Drawing.Size(294, 169);
             this.groupBoxOutbound.TabIndex = 19;
@@ -232,7 +232,7 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "LoadingAndUnloading"});
-            this.comboBox2.Location = new System.Drawing.Point(175, 281);
+            this.comboBox2.Location = new System.Drawing.Point(175, 253);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(422, 24);
             this.comboBox2.TabIndex = 20;
@@ -242,7 +242,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(802, 457);
+            this.ClientSize = new System.Drawing.Size(802, 456);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.groupBoxOutbound);
             this.Controls.Add(this.groupBoxInbound);
