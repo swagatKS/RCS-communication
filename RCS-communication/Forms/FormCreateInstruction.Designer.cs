@@ -38,12 +38,12 @@
             this.rbtnOutbound = new System.Windows.Forms.RadioButton();
             this.cmbInboundSource = new System.Windows.Forms.ComboBox();
             this.groupBoxInbound = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtInboundDestination = new System.Windows.Forms.TextBox();
             this.groupBoxOutbound = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtOutboundSource = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.cmbInboundDestination = new System.Windows.Forms.ComboBox();
+            this.cmbOutboundDestination = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBoxInbound.SuspendLayout();
             this.groupBoxOutbound.SuspendLayout();
@@ -59,6 +59,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "GO";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox4
             // 
@@ -152,7 +153,7 @@
             // 
             // groupBoxInbound
             // 
-            this.groupBoxInbound.Controls.Add(this.textBox1);
+            this.groupBoxInbound.Controls.Add(this.txtInboundDestination);
             this.groupBoxInbound.Controls.Add(this.label5);
             this.groupBoxInbound.Controls.Add(this.label6);
             this.groupBoxInbound.Controls.Add(this.cmbInboundSource);
@@ -164,19 +165,19 @@
             this.groupBoxInbound.Text = "Inbound Option";
             this.groupBoxInbound.Visible = false;
             // 
-            // textBox1
+            // txtInboundDestination
             // 
-            this.textBox1.Location = new System.Drawing.Point(155, 85);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 22);
-            this.textBox1.TabIndex = 16;
+            this.txtInboundDestination.Location = new System.Drawing.Point(155, 85);
+            this.txtInboundDestination.Name = "txtInboundDestination";
+            this.txtInboundDestination.Size = new System.Drawing.Size(121, 22);
+            this.txtInboundDestination.TabIndex = 16;
             // 
             // groupBoxOutbound
             // 
-            this.groupBoxOutbound.Controls.Add(this.textBox2);
+            this.groupBoxOutbound.Controls.Add(this.txtOutboundSource);
             this.groupBoxOutbound.Controls.Add(this.label1);
             this.groupBoxOutbound.Controls.Add(this.label2);
-            this.groupBoxOutbound.Controls.Add(this.cmbInboundDestination);
+            this.groupBoxOutbound.Controls.Add(this.cmbOutboundDestination);
             this.groupBoxOutbound.Location = new System.Drawing.Point(415, 88);
             this.groupBoxOutbound.Name = "groupBoxOutbound";
             this.groupBoxOutbound.Size = new System.Drawing.Size(294, 169);
@@ -185,12 +186,12 @@
             this.groupBoxOutbound.Text = "Outbound Option";
             this.groupBoxOutbound.Visible = false;
             // 
-            // textBox2
+            // txtOutboundSource
             // 
-            this.textBox2.Location = new System.Drawing.Point(155, 44);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 22);
-            this.textBox2.TabIndex = 17;
+            this.txtOutboundSource.Location = new System.Drawing.Point(155, 44);
+            this.txtOutboundSource.Name = "txtOutboundSource";
+            this.txtOutboundSource.Size = new System.Drawing.Size(121, 22);
+            this.txtOutboundSource.TabIndex = 17;
             // 
             // label1
             // 
@@ -212,19 +213,19 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "Destination";
             // 
-            // cmbInboundDestination
+            // cmbOutboundDestination
             // 
-            this.cmbInboundDestination.FormattingEnabled = true;
-            this.cmbInboundDestination.Items.AddRange(new object[] {
+            this.cmbOutboundDestination.FormattingEnabled = true;
+            this.cmbOutboundDestination.Items.AddRange(new object[] {
             "OB1",
             "OB2",
             "OB3",
             "OB4",
             "OB5"});
-            this.cmbInboundDestination.Location = new System.Drawing.Point(155, 83);
-            this.cmbInboundDestination.Name = "cmbInboundDestination";
-            this.cmbInboundDestination.Size = new System.Drawing.Size(121, 24);
-            this.cmbInboundDestination.TabIndex = 16;
+            this.cmbOutboundDestination.Location = new System.Drawing.Point(155, 83);
+            this.cmbOutboundDestination.Name = "cmbOutboundDestination";
+            this.cmbOutboundDestination.Size = new System.Drawing.Size(121, 24);
+            this.cmbOutboundDestination.TabIndex = 16;
             // 
             // comboBox2
             // 
@@ -277,9 +278,9 @@
         private System.Windows.Forms.GroupBox groupBoxOutbound;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cmbInboundDestination;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ComboBox cmbOutboundDestination;
+        private System.Windows.Forms.TextBox txtInboundDestination;
+        private System.Windows.Forms.TextBox txtOutboundSource;
         private System.Windows.Forms.ComboBox comboBox2;
     }
 }
