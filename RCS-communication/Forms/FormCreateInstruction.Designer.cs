@@ -38,12 +38,12 @@
             this.rbtnOutbound = new System.Windows.Forms.RadioButton();
             this.cmbInboundSource = new System.Windows.Forms.ComboBox();
             this.groupBoxInbound = new System.Windows.Forms.GroupBox();
+            this.txtInboundDestination = new System.Windows.Forms.TextBox();
             this.groupBoxOutbound = new System.Windows.Forms.GroupBox();
+            this.txtOutboundSource = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.cmbInboundDestination = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.cmbOutboundDestination = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBoxInbound.SuspendLayout();
             this.groupBoxOutbound.SuspendLayout();
@@ -53,16 +53,17 @@
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(625, 351);
+            this.button1.Location = new System.Drawing.Point(628, 262);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(147, 49);
             this.button1.TabIndex = 2;
             this.button1.Text = "GO";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(146, 389);
+            this.textBox4.Location = new System.Drawing.Point(175, 300);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(422, 22);
             this.textBox4.TabIndex = 6;
@@ -71,7 +72,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 341);
+            this.label3.Location = new System.Drawing.Point(50, 252);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 21);
             this.label3.TabIndex = 7;
@@ -82,7 +83,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(10, 389);
+            this.label4.Location = new System.Drawing.Point(50, 301);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 21);
             this.label4.TabIndex = 8;
@@ -114,7 +115,7 @@
             // 
             this.rbtnInbound.AutoSize = true;
             this.rbtnInbound.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnInbound.Location = new System.Drawing.Point(40, 83);
+            this.rbtnInbound.Location = new System.Drawing.Point(54, 25);
             this.rbtnInbound.Name = "rbtnInbound";
             this.rbtnInbound.Size = new System.Drawing.Size(100, 25);
             this.rbtnInbound.TabIndex = 13;
@@ -127,7 +128,7 @@
             // 
             this.rbtnOutbound.AutoSize = true;
             this.rbtnOutbound.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnOutbound.Location = new System.Drawing.Point(403, 83);
+            this.rbtnOutbound.Location = new System.Drawing.Point(415, 25);
             this.rbtnOutbound.Name = "rbtnOutbound";
             this.rbtnOutbound.Size = new System.Drawing.Size(110, 25);
             this.rbtnOutbound.TabIndex = 14;
@@ -152,29 +153,45 @@
             // 
             // groupBoxInbound
             // 
-            this.groupBoxInbound.Controls.Add(this.textBox1);
+            this.groupBoxInbound.Controls.Add(this.txtInboundDestination);
             this.groupBoxInbound.Controls.Add(this.label5);
             this.groupBoxInbound.Controls.Add(this.label6);
             this.groupBoxInbound.Controls.Add(this.cmbInboundSource);
-            this.groupBoxInbound.Location = new System.Drawing.Point(40, 132);
+            this.groupBoxInbound.Location = new System.Drawing.Point(54, 66);
             this.groupBoxInbound.Name = "groupBoxInbound";
             this.groupBoxInbound.Size = new System.Drawing.Size(294, 169);
             this.groupBoxInbound.TabIndex = 18;
             this.groupBoxInbound.TabStop = false;
-            this.groupBoxInbound.Text = "groupBoxInbound";
+            this.groupBoxInbound.Text = "Inbound Option";
+            this.groupBoxInbound.Visible = false;
+            // 
+            // txtInboundDestination
+            // 
+            this.txtInboundDestination.Location = new System.Drawing.Point(155, 85);
+            this.txtInboundDestination.Name = "txtInboundDestination";
+            this.txtInboundDestination.Size = new System.Drawing.Size(121, 22);
+            this.txtInboundDestination.TabIndex = 16;
             // 
             // groupBoxOutbound
             // 
-            this.groupBoxOutbound.Controls.Add(this.textBox2);
+            this.groupBoxOutbound.Controls.Add(this.txtOutboundSource);
             this.groupBoxOutbound.Controls.Add(this.label1);
             this.groupBoxOutbound.Controls.Add(this.label2);
-            this.groupBoxOutbound.Controls.Add(this.cmbInboundDestination);
-            this.groupBoxOutbound.Location = new System.Drawing.Point(403, 132);
+            this.groupBoxOutbound.Controls.Add(this.cmbOutboundDestination);
+            this.groupBoxOutbound.Location = new System.Drawing.Point(415, 66);
             this.groupBoxOutbound.Name = "groupBoxOutbound";
             this.groupBoxOutbound.Size = new System.Drawing.Size(294, 169);
             this.groupBoxOutbound.TabIndex = 19;
             this.groupBoxOutbound.TabStop = false;
-            this.groupBoxOutbound.Text = "groupBoxOutbound";
+            this.groupBoxOutbound.Text = "Outbound Option";
+            this.groupBoxOutbound.Visible = false;
+            // 
+            // txtOutboundSource
+            // 
+            this.txtOutboundSource.Location = new System.Drawing.Point(155, 44);
+            this.txtOutboundSource.Name = "txtOutboundSource";
+            this.txtOutboundSource.Size = new System.Drawing.Size(121, 22);
+            this.txtOutboundSource.TabIndex = 17;
             // 
             // label1
             // 
@@ -196,38 +213,26 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "Destination";
             // 
-            // cmbInboundDestination
+            // cmbOutboundDestination
             // 
-            this.cmbInboundDestination.FormattingEnabled = true;
-            this.cmbInboundDestination.Items.AddRange(new object[] {
+            this.cmbOutboundDestination.FormattingEnabled = true;
+            this.cmbOutboundDestination.Items.AddRange(new object[] {
             "OB1",
             "OB2",
             "OB3",
             "OB4",
             "OB5"});
-            this.cmbInboundDestination.Location = new System.Drawing.Point(155, 83);
-            this.cmbInboundDestination.Name = "cmbInboundDestination";
-            this.cmbInboundDestination.Size = new System.Drawing.Size(121, 24);
-            this.cmbInboundDestination.TabIndex = 16;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(155, 85);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 22);
-            this.textBox1.TabIndex = 16;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(155, 44);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 22);
-            this.textBox2.TabIndex = 17;
+            this.cmbOutboundDestination.Location = new System.Drawing.Point(155, 83);
+            this.cmbOutboundDestination.Name = "cmbOutboundDestination";
+            this.cmbOutboundDestination.Size = new System.Drawing.Size(121, 24);
+            this.cmbOutboundDestination.TabIndex = 16;
             // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(146, 342);
+            this.comboBox2.Items.AddRange(new object[] {
+            "LoadingAndUnloading"});
+            this.comboBox2.Location = new System.Drawing.Point(175, 253);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(422, 24);
             this.comboBox2.TabIndex = 20;
@@ -237,7 +242,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(802, 457);
+            this.ClientSize = new System.Drawing.Size(802, 456);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.groupBoxOutbound);
             this.Controls.Add(this.groupBoxInbound);
@@ -248,7 +253,8 @@
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.button1);
             this.Name = "FormCreateInstruction";
-            this.Text = "CreateInstruction";
+            this.Text = "Create Instruction";
+            this.Load += new System.EventHandler(this.FormCreateInstruction_Load);
             this.groupBoxInbound.ResumeLayout(false);
             this.groupBoxInbound.PerformLayout();
             this.groupBoxOutbound.ResumeLayout(false);
@@ -272,9 +278,9 @@
         private System.Windows.Forms.GroupBox groupBoxOutbound;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cmbInboundDestination;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ComboBox cmbOutboundDestination;
+        private System.Windows.Forms.TextBox txtInboundDestination;
+        private System.Windows.Forms.TextBox txtOutboundSource;
         private System.Windows.Forms.ComboBox comboBox2;
     }
 }
