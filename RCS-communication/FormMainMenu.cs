@@ -148,10 +148,5 @@ namespace RCS_communication
         {
             ActivateButton(sender);
         }
-
-        private void panelDesktop_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

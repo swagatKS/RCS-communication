@@ -38,9 +38,7 @@
             this.buttonQuery = new System.Windows.Forms.Button();
             this.buttonCreate = new System.Windows.Forms.Button();
             this.buttonInfo = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
-            this.panelLogo.SuspendLayout();
             this.panelTitle.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,7 +61,6 @@
             // panelLogo
             // 
             this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.panelLogo.Controls.Add(this.button1);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -102,7 +99,6 @@
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(806, 385);
             this.panelDesktop.TabIndex = 2;
-            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
             // 
             // button4
             // 
@@ -202,19 +198,6 @@
             this.buttonInfo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonInfo.UseVisualStyleBackColor = true;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Cyan;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::RCS_communication.Properties.Resources.bastian_logo_80_80;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(196, 80);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // FormMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -229,7 +212,6 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FormMainMenu_Load);
             this.panelMenu.ResumeLayout(false);
-            this.panelLogo.ResumeLayout(false);
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
             this.ResumeLayout(false);
@@ -248,7 +230,6 @@
         private System.Windows.Forms.Panel panelTitle;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelDesktop;
-        private System.Windows.Forms.Button button1;
     }
 }
 
