@@ -63,6 +63,16 @@ namespace RCS_communication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bastian_logo_80_80 {
+            get {
+                object obj = ResourceManager.GetObject("bastian logo 80,80", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bastian_solutions_logo_6511E43B29_seeklogo_com {
             get {
                 object obj = ResourceManager.GetObject("bastian-solutions-logo-6511E43B29-seeklogo.com", resourceCulture);

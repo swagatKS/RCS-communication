@@ -252,7 +252,7 @@
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.button1);
             this.Name = "FormCreateInstruction";
-            this.Text = "CreateInstruction";
+            this.Text = "Create Instruction";
             this.Load += new System.EventHandler(this.FormCreateInstruction_Load);
             this.groupBoxInbound.ResumeLayout(false);
             this.groupBoxInbound.PerformLayout();
