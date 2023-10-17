@@ -83,6 +83,26 @@ namespace RCS_communication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bs_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("bs-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap closeoutline_110831_removebg_preview_30x30 {
+            get {
+                object obj = ResourceManager.GetObject("closeoutline_110831-removebg-preview_30x30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ezgif_com_gif_maker_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("ezgif.com-gif-maker-removebg-preview", resourceCulture);
