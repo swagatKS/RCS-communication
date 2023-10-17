@@ -125,7 +125,7 @@ namespace RCS_communication.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap final_modify_30_30 {
             get {
-                object obj = ResourceManager.GetObject("final modify 30,30", resourceCulture);
+                object obj = ResourceManager.GetObject("final_modify_30_30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +186,26 @@ namespace RCS_communication.Properties {
         internal static System.Drawing.Bitmap imageedit_2_6023662441_30x30 {
             get {
                 object obj = ResourceManager.GetObject("imageedit_2_6023662441_30x30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap modify_bgremove_30x30 {
+            get {
+                object obj = ResourceManager.GetObject("modify_bgremove_30x30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap modify_revert_removebg_preview_30x30 {
+            get {
+                object obj = ResourceManager.GetObject("modify_revert-removebg-preview_30x30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
