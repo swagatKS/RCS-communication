@@ -161,7 +161,7 @@ namespace RCS_communication
         private void Reset()
         {
             DisableButton();
-            label1.Text = "HOME";
+            label1.Text = "               HOME               ";
             panelTitle.BackColor = Color.SteelBlue;
             panelLogo.BackColor = Color.FromArgb(39, 39, 58);
             currentButton = null;

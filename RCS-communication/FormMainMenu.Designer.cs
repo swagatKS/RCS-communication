@@ -59,7 +59,7 @@
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(248, 1050);
+            this.panelMenu.Size = new System.Drawing.Size(248, 950);
             this.panelMenu.TabIndex = 0;
             // 
             // panelLogo
@@ -90,11 +90,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(405, 44);
+            this.label1.Location = new System.Drawing.Point(293, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 36);
+            this.label1.Size = new System.Drawing.Size(356, 36);
             this.label1.TabIndex = 0;
-            this.label1.Text = "HOME";
+            this.label1.Text = "               HOME               ";
             // 
             // panelDesktop
             // 
@@ -103,17 +103,17 @@
             this.panelDesktop.Location = new System.Drawing.Point(248, 125);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(980, 925);
+            this.panelDesktop.Size = new System.Drawing.Size(980, 825);
             this.panelDesktop.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::RCS_communication.Properties.Resources.bs_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(282, 299);
+            this.pictureBox1.Location = new System.Drawing.Point(282, 249);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(395, 194);
+            this.pictureBox1.Size = new System.Drawing.Size(423, 170);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -235,7 +235,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(1228, 1050);
+            this.ClientSize = new System.Drawing.Size(1228, 950);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelMenu);
