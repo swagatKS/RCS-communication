@@ -150,6 +150,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\final_modify_30_30.jpg" />
+    <None Include="Resources\image.png" />
+    <None Include="Resources\information-348.png" />
     <None Include="Resources\modify_revert-removebg-preview_30x30.png" />
     <None Include="Resources\modify_bgremove_30x30.png" />
     <None Include="Resources\final_modify_30_301.jpg" />
