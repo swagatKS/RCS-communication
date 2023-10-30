@@ -84,6 +84,8 @@ namespace RCS_communication
             childForm.BringToFront();
             childForm.Show();
             label1.Text = childForm.Text;
+            int horizontalCenter = (this.Width - label1.Width) / 2;
+            label1.Location = new Point(horizontalCenter-90, label1.Location.Y);
         }
 
         private void FormMainMenu_Load(object sender, EventArgs e)
@@ -161,11 +163,18 @@ namespace RCS_communication
         private void Reset()
         {
             DisableButton();
-            label1.Text = "               HOME               ";
+            label1.Text = "HOME";
+            int horizontalCenter = (this.Width - label1.Width) / 2;
+            label1.Location = new Point(horizontalCenter - 90, label1.Location.Y);
             panelTitle.BackColor = Color.SteelBlue;
             panelLogo.BackColor = Color.FromArgb(39, 39, 58);
             currentButton = null;
             buttonCloseChildform.Visible = false;
+        }
+
+        private void buttonInfo_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormInfo(), sender);
         }
     }
 }

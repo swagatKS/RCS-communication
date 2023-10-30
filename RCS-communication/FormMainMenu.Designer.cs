@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.panelTitle = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panelDesktop = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonCloseChildform = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.buttonModify = new System.Windows.Forms.Button();
             this.buttonQuery = new System.Windows.Forms.Button();
             this.buttonCreate = new System.Windows.Forms.Button();
             this.buttonInfo = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.panelTitle = new System.Windows.Forms.Panel();
+            this.buttonCloseChildform = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelDesktop = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelTitle.SuspendLayout();
             this.panelDesktop.SuspendLayout();
@@ -61,75 +61,6 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(248, 950);
             this.panelMenu.TabIndex = 0;
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(248, 125);
-            this.panelLogo.TabIndex = 1;
-            // 
-            // panelTitle
-            // 
-            this.panelTitle.BackColor = System.Drawing.Color.SteelBlue;
-            this.panelTitle.Controls.Add(this.buttonCloseChildform);
-            this.panelTitle.Controls.Add(this.label1);
-            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitle.Location = new System.Drawing.Point(248, 0);
-            this.panelTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(980, 125);
-            this.panelTitle.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cooper Black", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(293, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(356, 36);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "               HOME               ";
-            // 
-            // panelDesktop
-            // 
-            this.panelDesktop.Controls.Add(this.pictureBox1);
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(248, 125);
-            this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(980, 825);
-            this.panelDesktop.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::RCS_communication.Properties.Resources.bs_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(282, 249);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(423, 170);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // buttonCloseChildform
-            // 
-            this.buttonCloseChildform.FlatAppearance.BorderSize = 0;
-            this.buttonCloseChildform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCloseChildform.Image = global::RCS_communication.Properties.Resources.closeoutline_110831_removebg_preview_30x30;
-            this.buttonCloseChildform.Location = new System.Drawing.Point(44, 31);
-            this.buttonCloseChildform.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonCloseChildform.Name = "buttonCloseChildform";
-            this.buttonCloseChildform.Size = new System.Drawing.Size(68, 58);
-            this.buttonCloseChildform.TabIndex = 0;
-            this.buttonCloseChildform.UseVisualStyleBackColor = true;
-            this.buttonCloseChildform.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // button4
             // 
@@ -216,7 +147,6 @@
             this.buttonInfo.FlatAppearance.BorderSize = 0;
             this.buttonInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonInfo.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonInfo.Image = global::RCS_communication.Properties.Resources.imageedit_2_6023662441_30x30;
             this.buttonInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonInfo.Location = new System.Drawing.Point(0, 125);
             this.buttonInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -224,10 +154,80 @@
             this.buttonInfo.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
             this.buttonInfo.Size = new System.Drawing.Size(248, 80);
             this.buttonInfo.TabIndex = 1;
-            this.buttonInfo.Text = "  BLANK1";
+            this.buttonInfo.Text = "   INFO";
             this.buttonInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonInfo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonInfo.UseVisualStyleBackColor = true;
+            this.buttonInfo.Click += new System.EventHandler(this.buttonInfo_Click);
+            // 
+            // panelLogo
+            // 
+            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(248, 125);
+            this.panelLogo.TabIndex = 1;
+            // 
+            // panelTitle
+            // 
+            this.panelTitle.BackColor = System.Drawing.Color.SteelBlue;
+            this.panelTitle.Controls.Add(this.buttonCloseChildform);
+            this.panelTitle.Controls.Add(this.label1);
+            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitle.Location = new System.Drawing.Point(248, 0);
+            this.panelTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelTitle.Name = "panelTitle";
+            this.panelTitle.Size = new System.Drawing.Size(980, 125);
+            this.panelTitle.TabIndex = 1;
+            // 
+            // buttonCloseChildform
+            // 
+            this.buttonCloseChildform.FlatAppearance.BorderSize = 0;
+            this.buttonCloseChildform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCloseChildform.Image = global::RCS_communication.Properties.Resources.closeoutline_110831_removebg_preview_30x30;
+            this.buttonCloseChildform.Location = new System.Drawing.Point(0, 0);
+            this.buttonCloseChildform.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.buttonCloseChildform.Name = "buttonCloseChildform";
+            this.buttonCloseChildform.Size = new System.Drawing.Size(68, 58);
+            this.buttonCloseChildform.TabIndex = 0;
+            this.buttonCloseChildform.UseVisualStyleBackColor = true;
+            this.buttonCloseChildform.Click += new System.EventHandler(this.button1_Click_2);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cooper Black", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(293, 53);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(356, 36);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "               HOME               ";
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.Controls.Add(this.pictureBox1);
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(248, 125);
+            this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(980, 825);
+            this.panelDesktop.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::RCS_communication.Properties.Resources.bs_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(282, 249);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(423, 170);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // FormMainMenu
             // 
