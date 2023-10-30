@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLogic.cs" />
     <Compile Include="FormMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +123,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\WhatsApp Image 2023-10-16 at 17.30.49_b58adaca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_2_6023662441_30x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\query final 30,30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\final modify 30,30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeoutline_110831-removebg-preview_30x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bs-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\final_modify_30_30.jpg" />
+    <None Include="Resources\modify_revert-removebg-preview_30x30.png" />
+    <None Include="Resources\modify_bgremove_30x30.png" />
+    <None Include="Resources\final_modify_30_301.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
