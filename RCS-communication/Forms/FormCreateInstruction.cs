@@ -74,6 +74,16 @@ namespace RCS_communication.Forms
 
         private void FormCreateInstruction_Load(object sender, EventArgs e)
         {
+            // For Inbound Destination
+            txtInboundDestination.Text = "e.g: R1S1C1 to R5S5C5";
+            txtInboundDestination.ForeColor = Color.Gray;
+            txtInboundDestination.Font = new Font(txtInboundDestination.Font, FontStyle.Italic);
+
+            // For Outbound Source
+            txtOutboundSource.Text = "e.g: R1S1C1 to R5S5C5";
+            txtOutboundSource.ForeColor = Color.Gray;
+            txtOutboundSource.Font = new Font(txtOutboundSource.Font, FontStyle.Italic);
+
 
         }
 
@@ -83,6 +93,9 @@ namespace RCS_communication.Forms
             string destination = string.Empty;
             bool isValid = true;
             string pattern = @"^[rR][1-5][sS][1-5][cC][1-5]$";
+            string generatedId = string.Empty;
+
+            int priority = (int)numPriority.Value;
 
 
             if (rbtnInbound.Checked)
@@ -106,6 +119,8 @@ namespace RCS_communication.Forms
                 if (isValid)
                 {
                     MessageBox.Show("Valid INBOUND input SUCCESSFULLY STORED!");
+                    generatedId = BusinessLogic.GenerateId();
+                    MessageBox.Show("Valid input. Generated ID: " + generatedId + "\nPriority: " + priority);
                 }
 
             }
@@ -131,11 +146,69 @@ namespace RCS_communication.Forms
                 if (isValid)
                 {
                     MessageBox.Show("Valid OUTBOUND input SUCCESSFULLY STORED!");
+                    generatedId = BusinessLogic.GenerateId();
+                    MessageBox.Show("Valid input. Generated ID: " + generatedId + "\nPriority: " + priority);
                 }
 
             }
           
             
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtInboundDestination_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtInboundDestination_Enter(object sender, EventArgs e)
+        {
+            if (txtInboundDestination.Text == "e.g: R1S1C1 to R5S5C5")
+            {
+                txtInboundDestination.Text = string.Empty; // Clear the placeholder text
+                txtInboundDestination.ForeColor = SystemColors.WindowText; // Restore the default text color
+                txtInboundDestination.Font = new Font(txtInboundDestination.Font, FontStyle.Regular); // Restore the regular style
+            }
+        }
+
+        private void txtInboundDestination_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtInboundDestination.Text))
+            {
+                txtInboundDestination.Text = "e.g: R1S1C1 to R5S5C5";
+                txtInboundDestination.ForeColor = Color.Gray;
+                txtInboundDestination.Font = new Font(txtInboundDestination.Font, FontStyle.Italic);
+            }
+        }
+
+        private void txtOutboundSource_Enter(object sender, EventArgs e)
+        {
+            if (txtOutboundSource.Text == "e.g: R1S1C1 to R5S5C5")
+            {
+                txtOutboundSource.Text = string.Empty; // Clear the placeholder text
+                txtOutboundSource.ForeColor = SystemColors.WindowText; // Restore the default text color
+                txtOutboundSource.Font = new Font(txtOutboundSource.Font, FontStyle.Regular); // Restore the regular style
+            }
+
+        }
+
+        private void txtOutboundSource_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtOutboundSource.Text))
+            {
+                txtOutboundSource.Text = "e.g: R1S1C1 to R5S5C5";
+                txtOutboundSource.ForeColor = Color.Gray;
+                txtOutboundSource.Font = new Font(txtOutboundSource.Font, FontStyle.Italic);
+            }
+        }
+
+        private void txtOutboundSource_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

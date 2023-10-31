@@ -173,6 +173,16 @@ namespace RCS_communication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image1 {
+            get {
+                object obj = ResourceManager.GetObject("image1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap imageedit_2_6023662441 {
             get {
                 object obj = ResourceManager.GetObject("imageedit_2_6023662441", resourceCulture);
@@ -186,6 +196,16 @@ namespace RCS_communication.Properties {
         internal static System.Drawing.Bitmap imageedit_2_6023662441_30x30 {
             get {
                 object obj = ResourceManager.GetObject("imageedit_2_6023662441_30x30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap information_348 {
+            get {
+                object obj = ResourceManager.GetObject("information-348", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
