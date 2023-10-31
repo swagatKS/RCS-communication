@@ -111,16 +111,15 @@ namespace RCS_communication.Forms
                     MessageBox.Show("Invalid Inbound Source selection. Please choose one of IB1-5.");
                 }
 
-                if (!Regex.IsMatch(destination, pattern))
+                else if (!Regex.IsMatch(destination, pattern))
                 {
                     isValid = false;
                     MessageBox.Show("Invalid input. Please enter a valid DESTINATION in the format R1S1C1 to R5S5C5.");
                 }
                 if (isValid)
                 {
-                    MessageBox.Show("Valid INBOUND input SUCCESSFULLY STORED!");
                     generatedId = BusinessLogic.GenerateId();
-                    MessageBox.Show("Valid input. Generated ID: " + generatedId + "\nPriority: " + priority);
+                    MessageBox.Show("Valid INBOUND input!\nGenerated ID: " + generatedId + "\nPriority: " + priority);
                 }
 
             }
@@ -128,16 +127,15 @@ namespace RCS_communication.Forms
             {
                 source = txtOutboundSource.Text;
                 destination = cmbOutboundDestination.Text;
+                string[] OutboundvalidOptions = { "OB1", "OB2", "OB3", "OB4", "OB5" };
 
                 if (!Regex.IsMatch(source, pattern))
                 {
                     isValid = false;
                     MessageBox.Show("Invalid input. Please enter a valid SOURCE in the format R1S1C1 to R5S5C5.");
                 }
-                
-                string[] OutboundvalidOptions = { "OB1", "OB2", "OB3", "OB4", "OB5" };
 
-                if (!OutboundvalidOptions.Contains(destination))
+                else if (!OutboundvalidOptions.Contains(destination))
                 {
                     isValid = false;
                     MessageBox.Show("Invalid Outbound Destination selection. Please choose one of OB1-5.");
@@ -145,9 +143,8 @@ namespace RCS_communication.Forms
                 
                 if (isValid)
                 {
-                    MessageBox.Show("Valid OUTBOUND input SUCCESSFULLY STORED!");
                     generatedId = BusinessLogic.GenerateId();
-                    MessageBox.Show("Valid input. Generated ID: " + generatedId + "\nPriority: " + priority);
+                    MessageBox.Show("Valid OUTBOUND input!\nGenerated ID: " + generatedId + "\nPriority: " + priority);
                 }
 
             }
