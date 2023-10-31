@@ -89,14 +89,14 @@ namespace RCS_communication.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string source = string.Empty;
-            string destination = string.Empty;
+            string source = String.Empty;
+            string destination = String.Empty;
             bool isValid = true;
             string pattern = @"^[rR][1-5][sS][1-5][cC][1-5]$";
-            string generatedId = string.Empty;
+            string generatedId = String.Empty;
 
             int priority = (int)numPriority.Value;
-
+            string type = String.Empty;
 
             if (rbtnInbound.Checked)
             {
@@ -116,8 +116,16 @@ namespace RCS_communication.Forms
                     isValid = false;
                     MessageBox.Show("Invalid input. Please enter a valid DESTINATION in the format R1S1C1 to R5S5C5.");
                 }
+
+                else if (comboBox2.Text != "LoadingAndUnloading")
+                {
+                    isValid = false;
+                    MessageBox.Show("Please select appropriate Type.");
+                }
+
                 if (isValid)
                 {
+                    type = "LoadingAndUnloading";
                     generatedId = BusinessLogic.GenerateId();
                     MessageBox.Show("Valid INBOUND input!\nGenerated ID: " + generatedId + "\nPriority: " + priority);
                 }
@@ -140,12 +148,30 @@ namespace RCS_communication.Forms
                     isValid = false;
                     MessageBox.Show("Invalid Outbound Destination selection. Please choose one of OB1-5.");
                 }
-                
+
+                else if (comboBox2.Text != "LoadingAndUnloading")
+                {
+                    isValid = false;
+                    MessageBox.Show("Please select appropriate Type.");
+                }
+
                 if (isValid)
                 {
                     generatedId = BusinessLogic.GenerateId();
                     MessageBox.Show("Valid OUTBOUND input!\nGenerated ID: " + generatedId + "\nPriority: " + priority);
                 }
+
+            }
+
+            else
+            {
+                MessageBox.Show("Please select Inbound or Outbound operation");
+            }
+
+            if (isValid)
+            {
+                string sysId = BusinessLogic.SystemId;
+                Instruction instr = new Instruction(generatedId, sysId, source, destination, type, priority);
 
             }
           
