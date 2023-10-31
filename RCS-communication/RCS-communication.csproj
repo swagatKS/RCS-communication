@@ -65,6 +65,12 @@
     <Compile Include="Forms\FormInfo.Designer.cs">
       <DependentUpon>FormInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormModifyInstruction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormModifyInstruction.Designer.cs">
+      <DependentUpon>FormModifyInstruction.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormQueryInstruction.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormInfo.resx">
       <DependentUpon>FormInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormModifyInstruction.resx">
+      <DependentUpon>FormModifyInstruction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormQueryInstruction.resx">
       <DependentUpon>FormQueryInstruction.cs</DependentUpon>

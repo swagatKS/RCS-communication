@@ -150,7 +150,7 @@ namespace RCS_communication
 
         private void buttonModify_Click_1(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            OpenChildForm(new Forms.FormModifyInstruction(), sender);
         }
 
         private void button1_Click_2(object sender, EventArgs e)
@@ -175,6 +175,11 @@ namespace RCS_communication
         private void buttonInfo_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.FormInfo(), sender);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
