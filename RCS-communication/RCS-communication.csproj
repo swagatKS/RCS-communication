@@ -160,6 +160,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\final_modify_30_30.jpg" />
+    <None Include="Resources\image %281%29 %282%291.png" />
+    <None Include="Resources\image %281%29 %282%29.png" />
+    <None Include="Resources\image %281%29 %281%29.png" />
+    <None Include="Resources\image %281%291.png" />
+    <None Include="Resources\rcs_logo2-removebg-preview.png" />
+    <None Include="Resources\rcs logo2.jpg" />
+    <None Include="Resources\image %281%29.png" />
     <None Include="Resources\image.png" />
     <None Include="Resources\information-348.png" />
     <None Include="Resources\modify_revert-removebg-preview_30x30.png" />
