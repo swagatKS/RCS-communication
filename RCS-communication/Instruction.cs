@@ -6,23 +6,18 @@ using System.Threading.Tasks;
 
 namespace RCS_communication
 {
-    internal class Instruction
+    public class Instruction
     {
+        private String id;
+        private String systemId;
         private String source;
         private String destination;
         private String type;
         private int priority;
-        private String id;
-        private String systemId;
 
         public String getSource()
         {
             return source;
-        }
-
-        public void setSource(String source)
-        {
-            this.source = source;
         }
 
         public String getDestination()
@@ -30,19 +25,9 @@ namespace RCS_communication
             return destination;
         }
 
-        public void setDestination(String destination)
-        {
-            this.destination = destination;
-        }
-
         public String getType()
         {
             return type;
-        }
-
-        public void setType(String type)
-        {
-            this.type = type;
         }
 
         public int getPriority()
@@ -50,29 +35,26 @@ namespace RCS_communication
             return priority;
         }
 
-        public void setPriority(int priority)
-        {
-            this.priority = priority;
-        }
 
         public String getId()
         {
             return id;
         }
 
-        public void setId(String id)
-        {
-            this.id = id;
-        }
 
         public String getSystemId()
         {
             return systemId;
         }
 
-        public void setSystemId(String systemId)
+        public Instruction(string id, string systemId, string source, string destination, string type, int priority)
         {
+            this.id = id;
             this.systemId = systemId;
+            this.source = source;
+            this.destination = destination;
+            this.type = type;
+            this.priority = priority;
         }
     }
 }

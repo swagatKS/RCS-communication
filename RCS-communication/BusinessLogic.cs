@@ -8,6 +8,7 @@ namespace RCS_communication
 {
     public static class BusinessLogic
     {
+        public static string SystemId = "VITSSK";
         public static string GenerateId()
         {
             string formattedDate = DateTime.Now.ToString("yyyyMMddHHmmss");
@@ -15,5 +16,7 @@ namespace RCS_communication
             string id = "T" + dateTimeMilli;
             return id;
         }
+
+
     }
 }
