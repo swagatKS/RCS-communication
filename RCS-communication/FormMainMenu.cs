@@ -140,7 +140,7 @@ namespace RCS_communication
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            OpenChildForm(new Forms.FormQueryInstruction(), sender);
         }
 
         private void buttonCreate_Click(object sender, EventArgs e)
