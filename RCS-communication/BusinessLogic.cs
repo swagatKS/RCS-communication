@@ -41,5 +41,29 @@ namespace RCS_communication
 
             catch (Exception ex) { return false; }
         }
+
+        public static async Task<List<Instruction>> InstructionGet()
+        {
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    HttpResponseMessage response = await client.GetAsync("https://92897245-339d-4852-ac85-204e6dcf53d7.mock.pstmn.io/api/v2/orders");
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string responseContent = await response.Content.ReadAsStringAsync();
+                        List<Instruction> instructions = JsonConvert.DeserializeObject<List<Instruction>>(responseContent);
+                        return instructions;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                
+            }
+
+            return null; 
+        }
     }
 }
