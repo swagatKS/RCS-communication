@@ -21,5 +21,10 @@ namespace RCS_communication.Forms
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

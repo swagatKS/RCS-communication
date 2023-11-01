@@ -87,19 +87,20 @@ namespace RCS_communication.Forms
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
-            string source = string.Empty;
-            string destination = string.Empty;
-            bool isValid = true;
+            string source = String.Empty;
+            string destination = String.Empty;
+            bool isValid = false;
             string pattern = @"^[rR][1-5][sS][1-5][cC][1-5]$";
-            string generatedId = string.Empty;
+            string generatedId = String.Empty;
 
             int priority = (int)numPriority.Value;
-
+            string type = String.Empty;
 
             if (rbtnInbound.Checked)
             {
+                isValid = true;
                 source = cmbInboundSource.Text;
                 destination = txtInboundDestination.Text;
 
@@ -111,45 +112,66 @@ namespace RCS_communication.Forms
                     MessageBox.Show("Invalid Inbound Source selection. Please choose one of IB1-5.");
                 }
 
-                if (!Regex.IsMatch(destination, pattern))
+                else if (!Regex.IsMatch(destination, pattern))
                 {
                     isValid = false;
                     MessageBox.Show("Invalid input. Please enter a valid DESTINATION in the format R1S1C1 to R5S5C5.");
                 }
-                if (isValid)
+
+                else if (comboBox2.Text != "LoadingAndUnloading")
                 {
-                    MessageBox.Show("Valid INBOUND input SUCCESSFULLY STORED!");
-                    generatedId = BusinessLogic.GenerateId();
-                    MessageBox.Show("Valid input. Generated ID: " + generatedId + "\nPriority: " + priority);
+                    isValid = false;
+                    MessageBox.Show("Please select appropriate Type.");
                 }
 
             }
             else if (rbtnOutbound.Checked)
             {
+                isValid = true;
                 source = txtOutboundSource.Text;
                 destination = cmbOutboundDestination.Text;
+                string[] OutboundvalidOptions = { "OB1", "OB2", "OB3", "OB4", "OB5" };
 
                 if (!Regex.IsMatch(source, pattern))
                 {
                     isValid = false;
                     MessageBox.Show("Invalid input. Please enter a valid SOURCE in the format R1S1C1 to R5S5C5.");
                 }
-                
-                string[] OutboundvalidOptions = { "OB1", "OB2", "OB3", "OB4", "OB5" };
 
-                if (!OutboundvalidOptions.Contains(destination))
+                else if (!OutboundvalidOptions.Contains(destination))
                 {
                     isValid = false;
                     MessageBox.Show("Invalid Outbound Destination selection. Please choose one of OB1-5.");
                 }
-                
-                if (isValid)
+
+                else if (comboBox2.Text != "LoadingAndUnloading")
                 {
-                    MessageBox.Show("Valid OUTBOUND input SUCCESSFULLY STORED!");
-                    generatedId = BusinessLogic.GenerateId();
-                    MessageBox.Show("Valid input. Generated ID: " + generatedId + "\nPriority: " + priority);
+                    isValid = false;
+                    MessageBox.Show("Please select appropriate Type.");
                 }
 
+
+            }
+
+            else
+            {
+                MessageBox.Show("Please select Inbound or Outbound operation");
+            }
+
+            if (isValid)
+            {
+                type = "LoadingAndUnloading";
+                generatedId = BusinessLogic.GenerateId();
+                string sysId = BusinessLogic.SystemId;
+                Instruction instr = new Instruction(generatedId, sysId, source, destination, type, priority);
+                if (await BusinessLogic.InstructionPost(instr))
+                {
+                    MessageBox.Show("Order created seccuessfully.\nID: " + generatedId + "\nPriority: " + priority);
+                }
+                else
+                {
+                    MessageBox.Show("Order creation failed!\n\nTry creating order instruction again in sometime.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
           
             
