@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+
 
 namespace RCS_communication
 {
@@ -17,6 +20,26 @@ namespace RCS_communication
             return id;
         }
 
+        public static async Task<bool> InstructionPost(Instruction instr)
+        {
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    string json = JsonConvert.SerializeObject(instr);
+                    var content = new StringContent(json, Encoding.UTF8, "application/json");
+                    HttpResponseMessage response = await client.PostAsync("https://92897245-339d-4852-ac85-204e6dcf53d7.mock.pstmn.io/api/v2/orders", content);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string responseContent = await response.Content.ReadAsStringAsync();
+                        Console.WriteLine(responseContent);
+                        return true;
+                    }
+                    return false;
+                }
+            }
 
+            catch (Exception ex) { return false; }
+        }
     }
 }
