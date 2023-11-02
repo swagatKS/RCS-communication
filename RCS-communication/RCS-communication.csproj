@@ -56,6 +56,12 @@
     <Compile Include="FormMainMenu.Designer.cs">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Contact Us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Contact Us.Designer.cs">
+      <DependentUpon>Contact Us.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormCreateInstruction.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <Compile Include="ThemeColor.cs" />
     <EmbeddedResource Include="FormMainMenu.resx">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Contact Us.resx">
+      <DependentUpon>Contact Us.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormCreateInstruction.resx">
       <DependentUpon>FormCreateInstruction.cs</DependentUpon>
@@ -173,6 +182,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\final_modify_30_30.jpg" />
+    <None Include="Resources\image %282%29.png" />
     <None Include="Resources\image %281%29 %282%291.png" />
     <None Include="Resources\image %281%29 %282%29.png" />
     <None Include="Resources\image %281%29 %281%29.png" />
