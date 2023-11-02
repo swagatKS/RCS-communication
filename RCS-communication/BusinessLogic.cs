@@ -42,28 +42,27 @@ namespace RCS_communication
             catch (Exception ex) { return false; }
         }
 
-        public static async Task<List<Instruction>> InstructionGet()
+        public static async Task<Instruction> InstructionGet(string id)
         {
             try
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    HttpResponseMessage response = await client.GetAsync("https://92897245-339d-4852-ac85-204e6dcf53d7.mock.pstmn.io/api/v2/orders");
+                    HttpResponseMessage response = await client.GetAsync("https://92897245-339d-4852-ac85-204e6dcf53d7.mock.pstmn.io/api/v2/orders?id=" + id);
 
                     if (response.IsSuccessStatusCode)
                     {
                         string responseContent = await response.Content.ReadAsStringAsync();
-                        List<Instruction> instructions = JsonConvert.DeserializeObject<List<Instruction>>(responseContent);
-                        return instructions;
+                        Instruction instruction = JsonConvert.DeserializeObject<Instruction>(responseContent);
+                        return instruction;
                     }
+                    return null;
                 }
             }
             catch (Exception ex)
             {
-                
+                return null;
             }
-
-            return null; 
         }
     }
 }
