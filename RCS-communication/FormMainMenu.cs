@@ -181,5 +181,10 @@ namespace RCS_communication
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.Contact_Us(), sender);
+        }
     }
 }
